@@ -1,0 +1,27 @@
+{
+  "name": "fazerhistoria",
+  "version": "0.0.1",
+  "authors": [
+    "Alvaro Junqueira"
+  ],
+  "description": "Quem Quer Fazer Historia",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static/js",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "~0.14.3",
+	"react-router": "~0.13.1",
+    "bootstrap": "~3.3.6",
+    "lodash": "~3.7.0",
+    "aja": "~0.3.4"
+  }
+}
