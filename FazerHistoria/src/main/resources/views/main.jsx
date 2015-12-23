@@ -1,22 +1,16 @@
-"use strict";
+import Header from './personagem/header-principal';
+import Corpo from './personagem/corpo-principal';
+import Footer from './components/footer';
 
-class Teste extends React.Component {
+class Home extends React.Component {
 
 	render() {
         return (<div>
-            		<h3>Teste 1</h3>
+			        <Header/>
+			        <Corpo/>
+			        <Footer/>
             	</div>);
     }
 }
 
-class Hello extends React.Component {
-
-	render() {
-        return (<div>
-            		<h3>Teste 2</h3>
-            		<Teste />
-            	</div>);
-    }
-}
-
-ReactDOM.render(<Hello />, document.getElementById('content'));
+ReactDOM.render(<Home />, document.getElementById('content'));

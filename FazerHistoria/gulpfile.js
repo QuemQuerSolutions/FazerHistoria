@@ -45,7 +45,7 @@ gulp.task('fazerhistoria', function() {
 gulp.task('fazerhistoria-dev', ['clean-fazerhistoria'], function() {
     var appBundler = browserify({
         entries: ['./src/main/resources/views/main.jsx'],
-        debug: false,
+        debug: true,
         cache: {},
         packageCache: {},
         extensions: ['.jsx', '.js'],
