@@ -9,6 +9,7 @@
     <script src="assets/bootstrap/dist/js/bootstrap.min.js"></script>
     
     <link href="assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 <!--   	<script src="resources/static/lodash.min.js"></script> -->
   </head>
   <body>

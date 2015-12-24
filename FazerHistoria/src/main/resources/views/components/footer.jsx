@@ -2,8 +2,12 @@ class Footer extends React.Component {
 
 	render() {
         return (<div>
-	        		<footer>
-	        			aqui é o rodapé
+	        		<footer id="footer">
+		        		<div className="container">
+		                	<p className="text-muted">Sugira.Pergunte.Quetione.Elogie.Melhore.Viaje conosco: 
+		                		<a href="mailto:quemquersolutions@gmail.com">quemquersolutions@gmail.com</a>
+		                	</p>
+		                </div>
 	            	</footer>
         		</div>);
     }
