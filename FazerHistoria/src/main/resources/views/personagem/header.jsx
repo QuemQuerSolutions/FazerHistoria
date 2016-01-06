@@ -1,6 +1,4 @@
-class HeaderPrincipal extends React.Component {
-
-	
+class Header extends React.Component {
 	
 	render() {
         return (<div className="jumbotron" id="header-principal">
@@ -11,4 +9,4 @@ class HeaderPrincipal extends React.Component {
     }
 }
 
-module.exports = HeaderPrincipal;
+export default Header;

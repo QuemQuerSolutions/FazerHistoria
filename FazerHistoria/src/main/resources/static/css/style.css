@@ -1,5 +1,9 @@
 @CHARSET "ISO-8859-1";
 
+html, body {height:100%;}
+
+#content{min-height:100%;position:relative;}
+
 #header-principal.jumbotron{
 	background-color: transparent;
 }
@@ -12,7 +16,6 @@
 #header-principal::after {
   content: "";
   background: url("../img/mapa-mundo.jpg");
-  opacity: 0.5;
   top: 0;
   left: 0;
   bottom: 0;
@@ -45,3 +48,4 @@
 .thumbnail{border:0}
 
 .name-box{color: rgba(51, 51, 51, 0.61);}
+.body-for-footer{padding-bottom: 40px;}

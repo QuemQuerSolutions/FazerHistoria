@@ -4,7 +4,7 @@ class Footer extends React.Component {
         return (<div>
 	        		<footer id="footer">
 		        		<div className="container">
-		                	<p className="text-muted">Sugira.Pergunte.Quetione.Elogie.Melhore.Viaje conosco: 
+		                	<p className="text-muted">Sugira.Pergunte.Questione.Elogie.Melhore.Viaje conosco: 
 		                		<a href="mailto:quemquersolutions@gmail.com">quemquersolutions@gmail.com</a>
 		                	</p>
 		                </div>
@@ -13,4 +13,4 @@ class Footer extends React.Component {
     }
 }
 
-module.exports = Footer;
+export default Footer;
