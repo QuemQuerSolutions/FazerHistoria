@@ -56,7 +56,6 @@
 {
 	background-image: linear-gradient(to bottom, #D7F5FF, #4ADCEF 130%);
 	cursor:pointer;
-	text-decoration: none;
 }
 
 .opcao
@@ -77,6 +76,6 @@
 	font-size: 14px;
 }
 .linkopcao {
-	text-decoration: none;
+	text-decoration: none !important;
 	color: black;
 }
