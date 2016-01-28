@@ -6,22 +6,32 @@ class Body extends React.Component {
     }
    
    componentWillMount(){
-//	   console.log("componentWillMount");
+	   console.log("componentWillMount", "body inicio");
    }
    
    componentDidMount(){
-//	   this.state.inicios = this.state.data.map(function(item, indice) {
-//			return <Personagem personagem={item} />;
-//		});
-//	   
-//	   this.setState(this.state);
+	   console.log("componentDidMount", "body inicio");
    }
    
 	render() {
-        return (<div>
-        			<div className="row body-for-footer">
-        				{this.state.data}
-        			</div>
+        return (<div className="row">
+			        <div className="media">
+				        <div className="media-left media-middle">
+				          <a href="#">
+				            <img className="media-object img-thumbnail" src={"../../../img/" + this.props.personagem.imagem} />
+				          </a>
+				        </div>
+				        <div className="media-body">
+				          <h4 className="media-heading">Escolha um ínicio</h4>
+				          <section className="4u">
+					      	<a href="" className="linkopcao">
+					      		<div className="opcao">
+					      		{this.props.personagem.nome}
+					      		</div>
+					      	</a><br/>
+					      </section>
+				        </div>
+			       </div>
             	</div>);
     }
 }

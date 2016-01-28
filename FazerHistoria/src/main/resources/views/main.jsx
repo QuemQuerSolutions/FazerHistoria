@@ -1,36 +1,41 @@
 import Router from 'react-router';
 import Header from './personagem/header';
-import Corpo from './personagem/body';
+import BodyPersonagem from './personagem/body';
 import Footer from './components/footer';
 import BodyInicios from './inicio/body';
 
-var Route = Router.Route,
-	RouteHandler = Router.RouteHandler,
-	DefaultRoute = Router.DefaultRoute;
-
 class Home extends React.Component {
 
+   constructor() {
+        super();
+        this.state = {};
+    }
+   
+   componentWillMount(){
+	   this.state.destino = <BodyPersonagem mudarBody={this.mudarBody.bind(this)} />;
+   }
+	
+	mudarBody(destino, item){
+		switch(destino){
+			case 'inicio':
+				this.state.destino = <BodyInicios personagem={item} mudarBody={this.mudarBody.bind(this)} />;
+				break;
+			default:
+				this.state.destino = <BodyPersonagem mudarBody={this.mudarBody.bind(this)} />;
+				break;
+		}
+		
+		this.setState(this.state);
+	}
+	
 	render() {
         return (<div id="content">
 			        <Header/>
-			        <Corpo/>
+			        {this.state.destino}
 			        <Footer/>
-			        <RouteHandler {...this.props} />
             	</div>);
     }
 }
 
-const routes = (
-	<Route name="home" path="/" handler={Home}>
-	    
-	    <Route name="inicios" path="/inicio/:idPersonagem" handler={BodyInicios} />
-
-		<DefaultRoute handler={Header} />
-    </Route>
-);
-
-Router.run(routes, (Handler, state) => {
-	ReactDOM.render(<Home {...state} />, document.getElementById('content'));
-});
-	
+ReactDOM.render(<Home />, document.getElementById('content'));
 export default Home;

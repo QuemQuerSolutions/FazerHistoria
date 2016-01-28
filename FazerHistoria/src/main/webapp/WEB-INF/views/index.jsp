@@ -8,7 +8,7 @@
     <script src="assets/jquery/dist/jquery.min.js"></script>
     <script src="assets/bootstrap/dist/js/bootstrap.min.js"></script>
   	<script src="assets/lodash/lodash.min.js"></script>
-  	<script src="assets/react-router/build/umd/ReactRouter.min.js"></script>
+<!--   	<script src="assets/react-router/build/umd/ReactRouter.min.js"></script> -->
   	
   	<script src="mock/data.js"></script>
     
